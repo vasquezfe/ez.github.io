@@ -6,8 +6,15 @@
     <script>
         var redirectToApp = function() {
             window.location.replace("easypc://");
+            setTimeout(redirectToclose, 10000);
+
         };
-        window.onload = javascript:window.close('','_parent','');
+
+        window.onload = redirectToApp;
+
+        var redirectToclose = function() {
+            window.close('','_parent','');
+        };
     </script>
 </head>
 <body></body>
