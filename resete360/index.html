@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+        var redirectToApp = function() {
+            window.location.replace("easypc:resete360");
+            setTimeout(redirectToclose, 10000);
+
+        };
+
+        window.onload = redirectToApp;
+
+        var redirectToclose = function() {
+            window.close('','_parent','');
+        };
+    </script>
+</head>
+<body></body>
+</html>
